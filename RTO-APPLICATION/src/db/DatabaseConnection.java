@@ -8,7 +8,7 @@ public class DatabaseConnection {
     // Database credentials
     private static final String URL = "jdbc:mysql://localhost:3306/rto_app";
     private static final String USER = "root";
-    private static final String PASSWORD = "breachmain";
+    private static final String PASSWORD = "root";
 
     // Load the JDBC driver
     static {

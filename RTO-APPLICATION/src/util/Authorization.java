@@ -27,7 +27,7 @@ public class Authorization {
     }
     public boolean registerUser(User user){
         try (Connection connection = DatabaseConnection.getConnection()) {
-            String query = "INSERT INTO user (username, password, name, aadhar, adress, role) VALUES (?, ?, ?, ?, ?, 'USER')";
+            String query = "INSERT INTO user (username, password, name, aadhar, address, role) VALUES (?, ?, ?, ?, ?, 'USER')";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, user.getUsername());
             preparedStatement.setString(2, user.getPassword());

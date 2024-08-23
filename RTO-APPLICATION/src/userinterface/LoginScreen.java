@@ -39,7 +39,7 @@ public class LoginScreen implements Screen {
                 System.out.println("Invalid email format.");
                 currentScreen.show(currentScreen);
             }
-            System.out.print("Enter password: ");
+//            System.out.print("Enter password: ");
             Console console = System.console();
 
 

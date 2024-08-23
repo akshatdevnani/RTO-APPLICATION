@@ -48,7 +48,7 @@ public class RegisterScreen implements Screen {
             }
             System.out.print("Enter your address: ");
             address = scanner.nextLine();
-            System.out.print("Enter password: ");
+//            System.out.print("Enter password: ");
 
             Console console = System.console();
 

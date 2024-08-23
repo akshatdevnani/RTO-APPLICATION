@@ -34,19 +34,19 @@ public class UserProfileService {
             Scanner scanner = new Scanner(System.in);
         Validation val = new Validation();
             try(Connection connection = DatabaseConnection.getConnection()){
-                System.out.print("Enter old password: ");
+//                System.out.print("Enter old password: ");
                 Console console = System.console();
                 if (console == null) {
                     throw new Exception("No console available");
                 }
-                char[] passwordArray = console.readPassword("Enter your password: ");
+                char[] passwordArray = console.readPassword("Enter old password: ");
                 String oldPassword = new String(passwordArray);
 //                String oldPassword = scanner.nextLine();
                 String hashOldPassword = hashPassword(oldPassword);
 
 
-                System.out.print("Enter new password: ");
-                passwordArray = console.readPassword("Enter your password: ");
+//                System.out.print("Enter new password: ");
+                passwordArray = console.readPassword("Enter new password: ");
                 String newPassword = new String(passwordArray);
 //                String oldPassword = scanner.nextLine();
 //                String newPassword="";
